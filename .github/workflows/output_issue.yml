@@ -1,0 +1,8 @@
+name: Output Issue Information to Shell
+
+on: issues
+
+jobs:
+  output_issue:
+    runs-on: ubuntu-latest
+    run: echo "${{ toJSON(github) }}"
